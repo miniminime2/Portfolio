@@ -48,21 +48,23 @@ h3 {
 /* article_01 : Intro */
 #article_01 {
 	width: 100%;
-	border: 3px solid #000;
 	background-image: url('../img/profile_m.jpg');
     background-position: top center;
 	background-size: cover;
-	padding-bottom: 177.8%;
+	padding-bottom: 178%;
+    display: table;
 }
-#article_01 .desc {	display: none; }
-#article_01 .desc span {}
+#article_01 .container {}
+#article_01 .container .desc {display: none;}
+#article_01 .container .desc span {}
 
 	
 /* article_02 : Why */
 #article_02 { padding: 150px 0; }
 #article_02 .container {}
 #article_02 .container .greeting {
-	margin: 0 auto;
+	margin: 0 aut;
+    padding-top: 0;
 	font-size: 20px;
 }
 #article_02 .container .greeting h2 { font-size: 15px; display: inline-block; }
@@ -116,7 +118,7 @@ h3 {
     position: absolute;
 	width: 45%;
 	top: auto;
-	bottom: 30px;
+	bottom: -30px;
 	left: auto;
     right: 15px;
 }

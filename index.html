@@ -70,7 +70,7 @@
 	<article id="article_01">
 	<div class="container">
 		<div class="desc">
-			<span># 당신이 찾아 헤매던 <em>웹 디자이너</em></span>
+			<span># 당신이 기다리던 <em>웹 디자이너</em></span>
 			<span># <em>능동적</em>인 자세</span>
 			<span># <em>공감</em>하는 커뮤니케이션</span>
 		</div>
@@ -111,7 +111,7 @@
 			    <h2><span>사이트리뉴얼</span></h2><br>
 			    <h2><span>&amp; 플랫폼 이전 프로젝트</span></h2>
 				<h3>
-				    독립몰에서 카페24 솔루션으로 플랫폼을 이전하는 프로젝트의 제안부터 개발사 선정, 업체 미팅, 스케쥴링, 쇼핑몰 DB이전, 디자인 감독 등을 수행하는 프로젝트 매니저로 참여.
+				    독립몰에서 카페24 솔루션으로 플랫폼을 이전하는 프로젝트의 제안부터 개발사 선정, 스케쥴 관리, 디자인 감리, 쇼핑몰 DB이전 등을 수행하며 프로젝트 매니저로 참여.
 				</h3>
 			</div>
 			<img class="mockup" src="img/laptop.png" alt="laptop">
@@ -215,7 +215,6 @@
 	<!-- //#article_04 -->
 	
 	
-	
 	<!-- #article_05 : 프로모션 디자인 -->
 	<article id="article_05">
 		<section class="section_01">
@@ -268,7 +267,7 @@
 					<img src="img/details_02.png" alt="상세페이지">
 					<div class="desc desc_03">상품 사진 촬영<br>가이드라인 제작으로<br>일관성 있는 상품 컷</div>
 					<div class="desc desc_04">상품의 특징을<br>효과적으로<br>보여주는 와이드 비율의<br>디테일 컷</div>
-					<div class="desc desc_05">사이즈차트 제작<br>자동화 프로그램<br>개발 프로젝트</div>
+					<div class="desc desc_05">사이즈차트 제작<br>자동화 프로그램<br>개발 참여</div>
 				</div>
 			</div>
 		</div><!-- //container -->
@@ -392,15 +391,14 @@
 	        nav.eq(5).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
 		}
 		if (wScroll >= cont.eq(6).offset().top -60 ){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(6).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+	        nav.removeClass("active");		                //nav의 "active" 클래스를 지우고
+	        nav.eq(6).addClass("active");	               //첫번째 nav에 "active" 클래스를 추가한다
 		}
 		if (wScroll >= cont.eq(7).offset().top -60 ){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(7).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+	        nav.removeClass("active");		                //nav의 "active" 클래스를 지우고
+	        nav.eq(7).addClass("active");	                 //첫번째 nav에 "active" 클래스를 추가한다
 		}
 	
-		
 		
 		// article02 지날때 부터 gnb보임
 		if ( wScroll > cont.eq(2).offset().top ) {
@@ -408,9 +406,34 @@
 			
 		} else {
 			$("#gnb").removeClass("fixed");
-			
 		}
 		
+        
+        // Text Animation
+        if(wScroll >= cont.eq(0).offset().top - $(window).height()/3 ){      //현재 스크롤 위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
+            cont.eq(0).addClass("show");                                     //.desc span에 "show"클래스를 추가한다
+        }
+        if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){  
+            cont.eq(1).addClass("show");               
+        }
+        if(wScroll >= cont.eq(2).offset().top - $(window).height()/3 ){         
+            cont.eq(2).addClass("show");
+        }
+        if(wScroll >= cont.eq(3).offset().top - $(window).height()/3 ){         
+            cont.eq(3).addClass("show");
+        }
+        if(wScroll >= cont.eq(4).offset().top - $(window).height()/3 ){         
+            cont.eq(4).addClass("show");
+        }
+        if(wScroll >= cont.eq(5).offset().top - $(window).height()/3 ){         
+            cont.eq(5).addClass("show");
+        }
+        if(wScroll >= cont.eq(6).offset().top - $(window).height()/3 ){         
+            cont.eq(6).addClass("show");
+        }
+        if(wScroll >= cont.eq(7).offset().top - $(window).height()/3 ){         
+            cont.eq(7).addClass("show");
+        }
 		
 	});
 	
