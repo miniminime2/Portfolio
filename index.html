@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Temporary Page</title>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics 
+	<title>Portfolio Site</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2R9NDMNBX"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -18,16 +18,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery Google CDN -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	
+
 	<!-- css -->
-	<link rel="stylesheet" href="slick/slick.css" type="text/css"> <!-- slick --> 
-	<link rel="stylesheet" href="slick/slick-theme.css" type="text/css"> <!-- slick --> 
+	<link rel="stylesheet" href="slick/slick.css" type="text/css"> <!-- slick -->
+	<link rel="stylesheet" href="slick/slick-theme.css" type="text/css"> <!-- slick -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 <!--<link rel="stylesheet" href="css/style.css" type="text/css" media="screen and (min-width:769px)">-->
 	<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen and (max-width: 768px)">
 
-	
+
 	<!-- slick slider -->
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -36,9 +36,29 @@
 		  slidesToScroll: 1,
 		  autoplay: true,
 		  autoplaySpeed: 2000,
-          dots: true,
-		  infinite: true	  
+      dots: true,
+		  infinite: true
 	  });
+
+	  $('.slider2').slick({
+		  slidesToShow: 2,
+		  slidesToScroll: 2,
+		  autoplay: true,
+		  autoplaySpeed: 1000,
+      dots: true,
+		  infinite: true,
+			centerMode: true,
+  		centerPadding: '350px'
+		});
+
+	  $('.slider-m').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 1000,
+      dots: true,
+		  infinite: true
+		});
 	});
 	</script>
 </head>
@@ -56,17 +76,17 @@
 					<li><a href="#article_04">사이트운영</a></li>
 					<li><a href="#article_05">프로모션 디자인</a></li>
 					<li><a href="#article_06">상세페이지</a></li>
-					<li><a href="#article_07">광고 및 SNS</a></li>
-					<li><a href="#article_08">Contact</a></li>
+					<li><a href="#article_07">광고배너</a></li>
+					<li><a href="#article_08">SNS배너</a></li>
+					<li><a href="#article_09">Contact</a></li>
 				</ul>
-				
+
 			</nav>
 		</div>
 </header>
 
 
-<main>
-	<!-- #article_01 : Intro -->
+<main>	<!-- #article_01 : Intro -->
 	<article id="article_01">
 	<div class="container">
 		<div class="desc">
@@ -77,10 +97,10 @@
 	</div><!-- //.container -->
 	</article>
 	<!-- //#article_01 -->
-		
-	
+
+
 	<!-- #article_02 : Why -->
-	<article id="article_02">	
+	<article id="article_02">
 	<div class="container">
 		<div class="greeting">
 			<h2><span>당신의 회사와 함께 할 이유</span><img src="img/why.png" alt="Why"></h2>
@@ -100,9 +120,8 @@
 	</div><!-- //.container -->
 	</article>
 	<!-- //#article_02 -->
-		
-	
-	
+
+
 	<!-- #article_03 : 사이트리뉴얼 -->
 	<article id="article_03">
 		<section class="section_01 bg-grey">
@@ -117,7 +136,7 @@
 			<img class="mockup" src="img/laptop.png" alt="laptop">
 	    </div><!-- //.container -->
 		</section>
-		
+
 		<section class="section_02">
 		<div class="container">
 			<img class="mockup forPc" src="img/iphone_01.png" alt="mobile">
@@ -155,8 +174,8 @@
 		</section>
 	</article>
 	<!-- //#article_03 -->
-	
-	
+
+
 	<!-- #article_04 : 사이트운영 -->
 	<article id="article_04" class="bg-grey">
 	<div class="container">
@@ -164,7 +183,7 @@
 			<h2><span>사이트운영</span></h2>
 			<h3>패션그룹형지<br> 공식 온라인 스토어 <em>형지몰</em></h3>
 		</div>
-		
+
 		<div class="slider_wrap">
 		<div class="slider">
 			<!-- 이미지 슬라이드 -->
@@ -188,7 +207,7 @@
 					<div class="desc">
 						<h2>3</h2>
 						<h3>원하는 상품을 쉽게 찾는<br><em>상품검색 필터</em></h3>
-					</div>		
+					</div>
 					<img src="img/site_03.png" alt="사이트운영">
 				</div>
 
@@ -207,45 +226,43 @@
 					</div>
 					<img src="img/site_05.png" alt="사이트운영">
 				</div>
-		
+
 		</div> <!-- .cont slider -->
 		</div> <!-- .cont_wrap -->
 	</div><!-- .container -->
 	</article>
 	<!-- //#article_04 -->
-	
-	
+
+
 	<!-- #article_05 : 프로모션 디자인 -->
 	<article id="article_05">
-		<section class="section_01">
-        <div class="container">
+		<section class="section section_01">
+  	  <div class="container">
 		    <div class="tit">
-                <h2><span>프로모션 디자인</span></h2>
-                <h3>자사몰 프로모션(기획전/이벤트) 페이지 및 배너 디자인</h3>
-            </div> 
-            
-			<div class="cont">
-				<img src="img/promo_01.png" alt="프로모션">
-				<img src="img/promo_02.png" alt="프로모션">
-				<img src="img/promo_03.png" alt="프로모션">
-				<img src="img/promo_04.png" alt="프로모션">
-				<img src="img/promo_05.png" alt="프로모션">
-				<img src="img/promo_06.png" alt="프로모션">
-				<img src="img/promo_07.png" alt="프로모션">
-				<img src="img/promo_08.png" alt="프로모션">
-			</div>
-		</div><!-- //.container -->
+            <h2><span>프로모션 디자인</span></h2>
+            <h3>자사몰 프로모션 (기획전/이벤트) 배너 및 페이지제작</h3>
+        </div>
+				<div class="cont">
+					<img src="img/promo_01.png" alt="프로모션">
+					<img src="img/promo_02.png" alt="프로모션">
+					<img src="img/promo_03.png" alt="프로모션">
+					<img src="img/promo_04.png" alt="프로모션">
+					<img src="img/promo_05.png" alt="프로모션">
+					<img src="img/promo_06.png" alt="프로모션">
+					<img src="img/promo_07.png" alt="프로모션">
+					<img src="img/promo_08.png" alt="프로모션">
+				</div>
+			</div><!-- //.container -->
 		</section>
-		
-		<section class="section_02 bg-grey">
-        <div class="contaienr">
-        </div><!-- //container -->
+
+		<section class="section section_02 bg-grey">
+      <div class="contaienr">
+      </div><!-- //container -->
 		</section>
     </article>
 	<!-- //#article_05 : 프로모션 디자인 -->
-	
-	
-	
+
+
 	<!-- #article_06 : 상세페이지 -->
 	<article id="article_06">
 		<section class="section section_01 clear">
@@ -255,7 +272,7 @@
 				<h3>인트로이미지를 통해 상품마다 <em>셀링 포인트를 강조</em>하고 모델컷 / 제품컷은 가이드를 정립해 <em>이미지 퀄리티를 표준화</em> 시켰으며, 작업 시간이 오래 걸리고 반복적인 사이즈차트는 제작 업무는 자동화 프로그램 개발을 통해 <em>업무 효율성</em>을 높였습니다.
 				</h3>
 			</div>
-			
+
 			<div class="cont">
 				<div class="feat feat_01">
 					<img src="img/details_01.png" alt="상세페이지">
@@ -267,65 +284,116 @@
 					<img src="img/details_02.png" alt="상세페이지">
 					<div class="desc desc_03">상품 사진 촬영<br>가이드라인 제작으로<br>일관성 있는 상품 컷</div>
 					<div class="desc desc_04">상품의 특징을<br>효과적으로<br>보여주는 와이드 비율의<br>디테일 컷</div>
-					<div class="desc desc_05">사이즈차트 제작<br>자동화 프로그램<br>개발 참여</div>
+					<div class="desc desc_05">상품고시정보 제공을<br>위한 라벨이미지</div>
+					<div class="desc desc_06">사이즈차트 제작<br>자동화 프로그램<br>개발 참여</div>
 				</div>
 			</div>
 		</div><!-- //container -->
 		</section>
-		
-		
+
 		<section class="section section_02 bg-grey"></section>
-		
 		<section class="section section_03"></section>
-		
 	</article> <!-- //#article_06 : 상세페이지 -->
 
 
+		<!-- #article_07 : 광고배너 -->
+		<article id="article_07" class="bg-grey">
+			<section class="section section_01">
+				<div class="container">
+					<div class="tit">
+						<h2><span>광고배너</span></h2>
+						<h3>네이버/ 다음 포털사이트의 <em>브랜드검색</em></h3>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_02">
+				<div class="slider_wrap">
+				<div class="slider2">
+						<div class="feat"><img src="img/brandAD_01.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_02.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_03.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_04.jpg" alt="광고배너"></div>
+				</div> <!-- //.slider -->
+				</div> <!-- //.slider_wrap -->
+			</section> <!-- //section -->
+
+		<!-- #article_07 : 광고배너 모바일 -->
+			<section class="section section_03">
+				<div class="slider_wrap">
+				<div class="slider-m">
+						<div class="feat"><img src="img/brandAD_01.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_02.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_03.jpg" alt="광고배너"></div>
+						<div class="feat"><img src="img/brandAD_04.jpg" alt="광고배너"></div>
+				</div> <!-- //.slider -->
+				</div> <!-- //.slider_wrap -->
+			</section> <!-- //section -->
+		<!-- //#article_07 : 광고배너 모바일 -->
+
+		</article> <!-- //#article_07 : 광고배너 -->
 
 
-	<!-- #article_07 : 광고 및 SNS배너 -->
-	<article id="article_07" class="bg-grey">
+
+	<!-- #article_08 : SNS배너 -->
+	<article id="article_08">
 	<div class="container">
 		<div class="tit">
-            <h2><span>광고 및 SNS배너</span></h2>
+            <h2><span>SNS배너</span></h2>
             <h3>네이버 및 다음 카카오 등 광고에 사용되는 배너 제작</h3>
         </div>
 
 		<div class="cont">
 			<div class="feat">
-				<img src="img/sns_01.png" alt="SNS">
-                <h3>네이버 브랜드검색</h3>
+				<img src="img/kakao_01.jpg" alt="SNS">
+				<h3>카카오톡 채널<br>플러스친구</h3>
 			</div>
 			<div class="feat">
-				<img src="img/sns_02.png" alt="SNS">
-				<h3>카카오 플러스친구</h3>
+				<img src="img/kakao_02.jpg" alt="SNS">
+				<h3>카카오톡 채널<br>메시지(와이드 이미지형)</h3>
 			</div>
 			<div class="feat">
-				<img src="img/sns_03.png" alt="SNS">
-				<h3>카카오 플러스친구</h3>
+				<img src="img/kakao_03.jpg" alt="SNS">
+				<h3>카카오톡 채널<br>메시지(와이드 리스트형)</h3>
 			</div>
 			<div class="feat">
-				<img src="img/sns_04.png" alt="SNS">
-				<h3>인스타그램</h3>
+				<img src="img/kakao_04.jpg" alt="SNS">
+				<h3>카카오톡 채널<br>포스트</h3>
+			</div>
+			<div class="feat">
+				<img src="img/insta_01.jpg" alt="SNS">
+				<h3>인스타그램<br>　</h3>
+			</div>
+			<div class="feat">
+				<img src="img/insta_02.jpg" alt="SNS">
+				<h3>인스타그램<br>포스트</h3>
+			</div>
+			<div class="feat">
+				<img src="img/insta_03.jpg" alt="SNS">
+				<h3>인스타그램<br>제품태그</h3>
+			</div>
+			<div class="feat">
+				<img src="img/insta_04.jpg" alt="SNS">
+				<h3>인스타그램<br>shop보기</h3>
 			</div>
 		</div> <!--// .cont -->
 	</div><!-- //.container -->
 	</article>
-	<!-- //#article_07 : 광고 및 SNS배너 -->
-	
-		
-	
-	<!-- #article_08 : Contact -->
-	<article id="article_08">
+	<!-- //#article_08 : SNS배너 -->
+
+
+
+	<!-- #article_09 : Contact -->
+	<article id="article_09">
 	<div class="container">
 		<div class="card">
 			<div class="btn">
 				<img src="img/emoji.png" alt="emoji">
 				<h2>Contact Me!</h2>
 			</div>
-			
+
 			<p class="farewell">Thank you for visiting my page</p>
-				
+
 			<p class="msg">"저와 함께 하고 싶으시다면 알려주세요"</p>
 			<div class="contact">
 				<p><span>phone</span>010-6473-6500</p>
@@ -334,113 +402,119 @@
 		</div>
 	</div><!-- //.container -->
 	</article>
-	<!-- //#article_08 -->
+	<!-- //#article_09 -->
 </main>
 </div>
 
-	
-	
 
-	
+
+
+
 
 <!-- parallax -->
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script>
 	var nav = $("#gnb nav ul li")
 	var cont = $("article")
- 
+
 	nav.click(function(e){			   		//버튼을 클릭했을 때,
 		e.preventDefault();				    //클릭시의 기본 이벤트 차단
 		var target = $(this);		     	//해당하는 버튼(nav)을 변수(target)에 저장
 		var index = target.index();			//클릭한 target의 index번호 저장
 //		alert(index);
-			
+
 		var section = cont.eq(index);
 		var offset = section.offset().top;
 //		alert(offset);
-		
+
 		$("html, body").animate({scrollTop: offset},600);
 	});
-	
-	
-	$(window).scroll(function(){ 					//스크롤했을 때,
-		var wScroll = $(this).scrollTop();			//현재 스크롤위치를 변수(wScroll)에 저장
-		
+
+
+	$(window).scroll(function(){ 						   			//스크롤했을 때,
+		var wScroll = $(this).scrollTop();						//현재 스크롤위치를 변수(wScroll)에 저장
+
+
+		if ( wScroll > cont.eq(2).offset().top ) {		// article02 지날때 부터 gnb보임
+			$("#gnb").addClass("fixed");
+
+		} else {
+			$("#gnb").removeClass("fixed");
+		}
+
 		if (wScroll >= cont.eq(0).offset().top){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
 	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
 	        nav.eq(0).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
 		}
-		if (wScroll >= cont.eq(1).offset().top){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(1).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(1).offset().top){
+	        nav.removeClass("active");
+	        nav.eq(1).addClass("active");
 		}
-		if (wScroll >= cont.eq(2).offset().top -60){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(2).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(2).offset().top -60){		//현재 스크롤위치가 3번째 cont의 오프셋위치-60보다 크거나 같으면
+	        nav.removeClass("active");							  //nav의 "active" 클래스를 지우고
+	        nav.eq(2).addClass("active");					   //3번째 nav에 "active" 클래스를 추가한다
 		}
-		if (wScroll >= cont.eq(3).offset().top -60){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(3).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(3).offset().top -60){
+	        nav.removeClass("active");
+	        nav.eq(3).addClass("active");
 		}
-		if (wScroll >= cont.eq(4).offset().top -60){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(4).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(4).offset().top -60){
+	        nav.removeClass("active");
+	        nav.eq(4).addClass("active");
 		}
-		if (wScroll >= cont.eq(5).offset().top -60){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		        //nav의 "active" 클래스를 지우고
-	        nav.eq(5).addClass("active");	        //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(5).offset().top -60){
+	        nav.removeClass("active");
+	        nav.eq(5).addClass("active");
 		}
-		if (wScroll >= cont.eq(6).offset().top -60 ){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		                //nav의 "active" 클래스를 지우고
-	        nav.eq(6).addClass("active");	               //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(6).offset().top -60 ){
+	        nav.removeClass("active");
+	        nav.eq(6).addClass("active");
 		}
-		if (wScroll >= cont.eq(7).offset().top -60 ){   	//현재 스크롤위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-	        nav.removeClass("active");		                //nav의 "active" 클래스를 지우고
-	        nav.eq(7).addClass("active");	                 //첫번째 nav에 "active" 클래스를 추가한다
+		if (wScroll >= cont.eq(7).offset().top -60 ){
+	        nav.removeClass("active");
+	        nav.eq(7).addClass("active");
 		}
-	
-		
-		// article02 지날때 부터 gnb보임
-		if ( wScroll > cont.eq(2).offset().top ) {
-			$("#gnb").addClass("fixed");
-			
-		} else {
-			$("#gnb").removeClass("fixed");
+		if (wScroll >= cont.eq(8).offset().top -60 ){
+	        nav.removeClass("active");
+	        nav.eq(8).addClass("active");
 		}
-		
-        
-        // Text Animation
-        if(wScroll >= cont.eq(0).offset().top - $(window).height()/3 ){      //현재 스크롤 위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
-            cont.eq(0).addClass("show");                                     //.desc span에 "show"클래스를 추가한다
-        }
-        if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){  
-            cont.eq(1).addClass("show");               
-        }
-        if(wScroll >= cont.eq(2).offset().top - $(window).height()/3 ){         
-            cont.eq(2).addClass("show");
-        }
-        if(wScroll >= cont.eq(3).offset().top - $(window).height()/3 ){         
-            cont.eq(3).addClass("show");
-        }
-        if(wScroll >= cont.eq(4).offset().top - $(window).height()/3 ){         
-            cont.eq(4).addClass("show");
-        }
-        if(wScroll >= cont.eq(5).offset().top - $(window).height()/3 ){         
-            cont.eq(5).addClass("show");
-        }
-        if(wScroll >= cont.eq(6).offset().top - $(window).height()/3 ){         
-            cont.eq(6).addClass("show");
-        }
-        if(wScroll >= cont.eq(7).offset().top - $(window).height()/3 ){         
-            cont.eq(7).addClass("show");
-        }
-		
-	});
-	
 
+
+    // Text Animation
+    if(wScroll >= cont.eq(0).offset().top - $(window).height()/3 ){      //현재 스크롤 위치가 첫번째 cont의 오프셋위치보다 크거나 같으면
+        cont.eq(0).addClass("show");                                     //.desc span에 "show"클래스를 추가한다
+    }
+    if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
+        cont.eq(1).addClass("show");
+    }
+    if(wScroll >= cont.eq(2).offset().top - $(window).height()/3 ){
+        cont.eq(2).addClass("show");
+    }
+    if(wScroll >= cont.eq(3).offset().top - $(window).height()/3 ){
+        cont.eq(3).addClass("show");
+    }
+    if(wScroll >= cont.eq(4).offset().top - $(window).height()/3 ){
+        cont.eq(4).addClass("show");
+    }
+    if(wScroll >= cont.eq(5).offset().top - $(window).height()/3 ){
+        cont.eq(5).addClass("show");
+    }
+    if(wScroll >= cont.eq(6).offset().top - $(window).height()/3 ){
+        cont.eq(6).addClass("show");
+    }
+    if(wScroll >= cont.eq(7).offset().top - $(window).height()/3 ){
+        cont.eq(7).addClass("show");
+    }
+    if(wScroll >= cont.eq(8).offset().top - $(window).height()/3 ){
+        cont.eq(8).addClass("show");
+    }
+    if(wScroll >= cont.eq(9).offset().top - $(window).height()/3 ){
+        cont.eq(9).addClass("show");
+    }
+});
 </script>
 
 
-	
+
 </body>
 </html>
