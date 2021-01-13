@@ -48,12 +48,12 @@ h3 {
 
 /* article_01 : Intro */
 #article_01 {
-	width: 100%;
+	width: 100%; height: auto;
 	background-image: url('../img/profile_m.jpg');
-    background-position: top center;
-	background-size: cover;
-	padding-bottom: 178%;
-    display: table;
+  background-position: top center;
+	background-size: contain;
+	padding-bottom: 177.8%;
+  display: table;
 }
 #article_01 .container {}
 #article_01 .container .desc {display: none;}
